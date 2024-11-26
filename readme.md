@@ -1,20 +1,23 @@
-![image](https://github.com/valuex/TC_SnippetManager/assets/3627812/eb5ea34f-8703-4005-bc9a-7342ed218933)
+# TC_SnippetManager #
 
+>Total Commander (TC) Snippet Manager streamlines coding / development
 
-# TC_SnippetManager
-利用Total Command (TC)来管理程序/文本片段
+![screenshot](screenshot.png)
 
-# 使用方法
-1. 在`setting.ini`中配置好TC所在目录和程序片段对应的目录
-2. 按下快捷键{F1}即可体验。用户可自行修改快捷键。
+## Usage ##
 
-# 特性
-1. **自动判定位置**：弹出的TC窗口会出现在编辑光标所在的位置A。
-2. **自动判定语言**：根据当前编辑的语言类型，支持跳转到相对应的片段目录。目前支持VSC。比如，在VSC中编辑.ahk文档，按下快捷键，就会跳转到ahk_lib。 用户可以在`setting.ini`中配置其他语言对应的【片段目录】。
-3. **界面极简**：弹出的TC窗口只有两栏【弹窗状态】，左侧为筛选区，右侧为预览区。界面极简，没有标题栏、菜单栏等。
-4. **性能强大**：充分利用TC的优势，通过quick search 进行按键定位和预览能力进行片段预览。定位快！预览能力强！理论上支持预览的程序类型和文本类型是最多的，并且语法高亮效果也是最好的。
-5. **一键贴回**：【弹窗状态】下选中含有目标片段的文件，按下{Enter}键即可将该文件中的内容粘贴到位置A。
-6. **静默退出**：【弹窗状态】下的TC窗口会等待按下{Enter}键或者TC窗口失去焦点后再退出。
-5. **强制退出**：【弹窗状态】下双击ESC也可退出【弹窗状态】。
-6. **模式切换**：将TC由【弹窗状态】切换成【正常模式】，直接运行`\lib`目录下的`TC_ToggleMode.ahk` 即可。
+1. Configure the directory where the TC is located and the directory corresponding to the program `fragmentsetting.ini`
+2. Press the shortcut `{F1}` to experience it. Users can modify the shortcut keys by themselves.
 
+## Features ##
+
+- *Automatic Position Determination*: The pop-up TC window will appear at the position A where the editing cursor is located.
+- *Automatic language determination*: Based on the language type currently edited, you can jump to the corresponding fragment directory.
+- *VS Code-compatible*: If you edit an `.ahk` file in VSC and press a shortcut key, you will be redirected to the `ahk_lib`. Users can configure the [fragment directory] corresponding to other languages in `setting.ini`
+- *Simple interface*: the pop-up TC window has only two columns [Pop-up Status], the left side is the filter area, and the right side is the preview area. The interface is minimalist, with no title bar, menu bar, etc.
+- *Powerful performance*: Make full use of the advantages of TC to preview clips through quick search for key positioning and preview capabilities. Positioning is fast! Preview ability!
+- Theoretically, the Snippet Manager (TC Manager's syntax highlighting and text previewer) should support other programming languages, not *only* AutoHotkey.
+- *One-click Paste*: Select the file containing the target fragment under [Pop-up Status], and press the `{Enter}` key to paste the content of the file into position A.
+- *Silent Exit*: The TC window in [Pop-up Status] will wait for the `{Enter}` key to be pressed or the TC window loses focus before exiting.
+- *Force Exit*: Double-click the ESC in [Pop-up Status] to exit [Pop-up Status].
+Mode switching: Switch the TC from [Pop-up Status] to [normal mode], and directly run the directory.`\lib\TC_ToggleMode.ahk`
